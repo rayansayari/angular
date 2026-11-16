@@ -1,0 +1,14 @@
+<div class="box">
+  <h3>👤 Mon profil</h3>
+
+  @if (editing) {
+    <input [(ngModel)]="user.firstName" placeholder="Prénom" />
+    <input [(ngModel)]="user.lastName" placeholder="Nom" />
+    <input [(ngModel)]="user.email" placeholder="Email" />
+  } @else {
+    <p><strong>{{ user.lastName | uppercase }}</strong> {{ user.firstName }}</p>
+    <p>{{ user.email }}</p>
+  }
+
+  <button (click)="toggleEdit()">{{ editing ? 'Enregistrer' : 'Modifier' }}</button>
+</div>

@@ -1,0 +1,14 @@
+.header-container {
+  background-color: #1e3a8a; /* Bleu institutionnel */
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

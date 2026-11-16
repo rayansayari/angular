@@ -1,0 +1,9 @@
+<nav>
+  @for (item of menu; track item) {
+    <a href="#"
+       [class.active]="item === active"
+       (click)="select(item)">
+      {{ item }}
+    </a>
+  }
+</nav>

@@ -1,0 +1,15 @@
+<div class="box">
+  <h3>👥 Mes amis ({{ onlineCount }} en ligne)</h3>
+
+  <ul>
+    @for (f of friends; track f.id) {
+      <li>
+        <span [class.online]="f.online" [class.offline]="!f.online">●</span>
+        {{ f.name }}
+        <button (click)="remove(f)">✕</button>
+      </li>
+    } @empty {
+      <li>Aucun ami pour le moment.</li>
+    }
+  </ul>
+</div>

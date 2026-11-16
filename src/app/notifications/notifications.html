@@ -1,0 +1,19 @@
+<div class="box">
+  <h3>🔔 Notifications ({{ unreadCount }})</h3>
+
+  @for (n of notifications; track n.id) {
+    <div class="notif" [class.unread]="!n.read">
+      <p>{{ n.message }}</p>
+      <small>{{ n.date | date:'dd/MM HH:mm' }}</small>
+      @if (!n.read) {
+        <button (click)="markAsRead(n)">Marquer comme lue</button>
+      }
+    </div>
+  } @empty {
+    <p>Aucune nouvelle notification</p>
+  }
+
+  @if (notifications.length > 0) {
+    <button (click)="clearAll()">Tout effacer</button>
+  }
+</div>

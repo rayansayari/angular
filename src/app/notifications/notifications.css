@@ -1,0 +1,4 @@
+.notif { padding: 6px; border-bottom: 1px solid #eee; }
+.notif p { margin: 0; }
+.unread { background: #fff6e0; font-weight: bold; }
+button { margin-top: 4px; cursor: pointer; }

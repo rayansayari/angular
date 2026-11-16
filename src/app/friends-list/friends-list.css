@@ -1,0 +1,5 @@
+li { list-style: none; margin-bottom: 4px; }
+ul { padding-left: 0; }
+.online { color: #28a745; }
+.offline { color: #aaa; }
+button { margin-left: 6px; border: none; background: none; cursor: pointer; color: #dc3545; }
